@@ -1,0 +1,405 @@
+*,body,html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  font-family: Sans-Serif;
+}
+
+:root {
+  --bg-primary : white;
+  --bg-secondary : #f9f9f9;
+  
+  --iconColor : #30d6f3;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+a {
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+p {
+  color: #a1a1a1;
+}
+
+img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+/* navigasi start */
+.navbar {
+  width: 100%;
+  height: 80px;
+  background-color: white;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav>ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transition: all .3s;
+}
+
+nav>ul>li {
+  margin: 0 10px;
+  list-style-type: none;
+}
+
+nav>ul>li>a {
+  padding: 10px;
+  font-size: 1.2rem;
+  transition: all .2s ease-in-out;
+  color: black;
+}
+
+nav>ul>li>a:hover {
+  color: var(--iconColor);
+  border: 1px solid #d6d6d6;
+}
+
+
+nav>ul>li>a>button {
+  padding: 10px;
+  font-size: 1.2rem;
+  background-color: white;
+  border: 1px solid #d6d6d6;
+}
+  
+nav>ul>li>a>button:hover {
+  color: var(--iconColor);
+  padding: 12px;
+}
+
+.btn {
+  border: none;
+  padding: 0;
+}
+
+.btn:hover {
+  border: none;!important
+}
+
+nav>h1 {
+  font-size: 3rem;
+}
+
+.humburger-menu {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  font-size: 2.5rem;
+  color: black;
+  z-index: 999;
+}
+
+.photoprofile {
+  width: 50px;
+  height: auto;
+}
+
+.photoprofile>img {
+  border-radius: 360px;
+}
+/* header selesai */
+/* hero mulai */
+.hero {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 720px;
+}
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 40px;
+  width: 50%;
+  gap: 10px;
+}
+
+.hero-left>h1 {
+  font-size: 3rem;
+}
+
+.hero-left>h1>span {
+  color: var(--iconColor);
+}
+
+.hero-left>p {
+  inline-size: 80%;
+}
+
+.hero-left>h3 {
+  margin: 0 20px;
+}
+
+.btn-hero {
+  display: inline;
+}
+
+.btn-more {
+  position: absolute;
+  margin-top: 10px;
+  left: 50px;
+  padding: 15px 25px;
+  border: 1px solid var(--iconColor);
+  border-radius: 4px;
+  color: black;
+  font-weight: bold;
+  transition: all .2s ease-in-out;
+}
+
+.btn-more:hover {
+  background-color: var(--iconColor);
+  color: white;
+}
+
+.spacing {
+  letter-spacing: 8px;
+  color: #a1a1a1;
+}
+
+.hero-right {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+/* hero selesai */
+/* service mulai */
+.service-countainer {
+  width: 100%;
+  background-color: var(--bg-secondary);
+  padding: 3rem;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1.5rem;
+}
+
+.information>h1 {
+  font-size: 2rem;
+}
+
+.grid-3 {
+  width: 100%;
+  height: 85%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 3rem;
+}
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-primary);
+  padding: 3rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.service-card>i {
+  padding: .7rem;
+  margin: 1rem auto;
+  font-size: 2rem;
+  background-color: var(--iconColor);
+  color: white;
+  border-radius: 8px;
+}
+/* service selesai */
+/* portfolio mulai */
+.portfolio {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.information-portfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.information-portfolio>h3::before {
+  content: "";
+  width: 2rem;
+  height: 1px;
+  background-color: #a1a1a1;
+  position: absolute;
+  left: 2rem;
+  margin-top: .5rem;
+}
+
+.information-portfolio>h3 {
+  margin-left: 3rem;
+}
+
+.information-portfolio>h1 {
+  font-size: 2rem;
+}
+
+.grid-3-portfolio {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 0 2rem;
+}
+
+.portfolio-card {
+  display: flex;
+  flex-direction: column;
+  border: 5px solid var(--bg-secondary);
+  align-items: center;
+  padding: 2rem;
+}
+
+.portfolio-card>img {
+  box-shadow: 8px 8px 8px rgba(0,0,0,0.286);
+}
+
+.portfolio-card>h1, p {
+  align-self: normal;
+}
+
+.portfolio-card>h1 {
+  font-size: 1.5rem;
+  margin: 1.5rem 0 0 0;
+}
+
+
+.portfolio-card>ul {
+  display: flex;
+  align-self: normal;
+}
+
+.portfolio-card>ul>li {
+  list-style-type: none;
+  padding: .5rem 1rem;
+  border: 2px solid var(--bg-secondary);
+  margin: 5px 5px 5px 0;
+  font-size: 1rem;
+}
+
+.portfolio-card>p {
+  inline-size: 100%;
+  text-align: center;
+  margin-top: .5rem;
+}
+
+
+/* portfolio selesai */
+
+@media screen and (max-width: 576px) {
+  
+  .photoprofile {
+    order: 1;
+    width: 2.5rem;
+  }
+  
+  .humburger-menu {
+    display: flex;
+    order: 3;
+    font-size: 2.5rem;
+  }
+  
+  nav>h1 {
+    z-index: 99;
+    order: 2;
+    font-size: 2.5rem;
+  }
+  
+ nav>ul{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 200px;
+    justify-content: space-evenly;
+    align-items: normal;
+    background-color: white;
+    transform: translateX(-100%);
+    order: 1;
+  }
+  
+  nav>ul.slide {
+    transform: translateX(0);
+  }
+  
+  nav {
+    flex-direction: row-reverse;
+    box-shadow: 8px 0 8px 8px rgba(0, 0, 0, 0.200);
+  }
+  
+  .hero {
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero-right {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    order: -1;
+  }
+  
+  .hero-left {
+    justify-content: center;
+    align-items: center;
+    inline-size: 100%;
+  }
+  
+  .hero-left>h1 {
+    font-size: 2rem;
+  }
+  
+  .hero-left>p {
+    font-size: .8rem;
+    align-self: center;
+    text-align: center;
+  }
+  
+  .btn-hero {
+    display: flex;
+  }
+  .btn-more {
+    position: static;
+    margin: 10px auto;
+  }
+  
+  .portfolio-card>p {
+    inline-size: 100%;
+    text-align: left;
+  }
+}
