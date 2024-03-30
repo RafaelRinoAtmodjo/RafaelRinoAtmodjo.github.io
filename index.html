@@ -122,11 +122,15 @@
           <h1>Contact Me</h1>
           <hr>
         </div>
-        <form action="">
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="7371668f-bf21-4a1f-b04d-f185393e4369">
           <input type="text" name="name" placeholder="Your Name" class="contact-input" required>
           <input type="text" name="email" placeholder="Your email" class="contact-input" required>
           <textarea name="message" placeholder="Your Message" class="contact-input textarea" required></textarea>
-          <button type="submit">submit <img src="src/img/arrow_icon.png" alt=""></button>
+          <div class="h-captcha" data-captcha="true"></div>
+          <div class="btn-contact">
+            <button type="submit">submit <img src="src/img/arrow_icon.png" alt=""></button>
+          </div>
         </form>
       </div>
       <div class="contact-right">
@@ -148,6 +152,8 @@
 <!--         sesi Footer end -->
 <!--   script icon -->
     <script src="https://kit.fontawesome.com/513381f390.js" crossorigin="anonymous"></script>
+<!--    script web3 forms-->    
+    <script src="https://web3forms.com/client/script.js" async defer></script>
 <!--   my script   -->
 <script src="src/js/main.js" type="text/javascript" charset="utf-8"></script>
     

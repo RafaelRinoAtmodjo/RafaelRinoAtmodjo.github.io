@@ -242,6 +242,7 @@ nav>h1 {
   width: 100%;
   display: flex;
   flex-direction: column;
+  padding: 2rem;
 }
 
 .information-portfolio {
@@ -323,9 +324,20 @@ nav>h1 {
 .contact {
   display: flex;
   flex-direction: column;
+  padding: 5rem;
+  background-color: var(--bg-secondary);
+}
+
+.contact>h1, .contact>h3 {
+  margin-left: 3rem;
+}
+
+.contact>h1 {
+  margin-left: 4rem;
 }
 
 .wrapper-contact {
+  
   display: flex;
 }
 
@@ -340,10 +352,10 @@ form {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: 90%;
+  width: 80%;
   border-radius: 50px;
   background-color: var(--iconColor);
-  padding: 3rem;
+  padding: 4rem;
 }
 
 .contact-title>h1 {
@@ -371,10 +383,11 @@ form {
   font-weight: 500;
   color: #666;
   border-radius: 50px;
+  text-transform: none;
 }
 
 .textarea {
-  height: 140px;
+  height: 15rem;
   width: 100%;
   padding-top: 10px;
   border-radius: 20px;
@@ -382,6 +395,29 @@ form {
 
 .contact-input:focus {
   border: 2px solid lightgreen
+}
+
+.btn-contact {
+  display: block;
+}
+
+.btn-contact>button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  background-color: var(--iconColor);
+  border: 2px solid white;
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+  transition: all .3s ease-in-out;
+}
+
+.btn-contact>button:hover {
+  background-color: white;
+  color: var(--iconColor);
 }
 /* contact selesai */
 /* footer mulai */
@@ -397,6 +433,7 @@ footer {
 color: black;
 font-size: 1.5rem;
 }
+
 /* footer selesai */
 
 @media screen and (max-width: 576px) {
@@ -483,5 +520,21 @@ font-size: 1.5rem;
   .portfolio-card>p {
     inline-size: 100%;
     text-align: left;
+  }
+
+  .contact-right {
+    display: none;
+  }
+
+  .contact-left {
+    width: 100%;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  .wrapper-contact {
+    width: 100%;
   }
 }
