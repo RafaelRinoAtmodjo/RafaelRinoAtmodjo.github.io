@@ -11,6 +11,8 @@
   --bg-secondary : #f9f9f9;
   
   --iconColor : #30d6f3;
+
+  --bgFooter : #dcdcdc;
 }
 
 body {
@@ -316,6 +318,20 @@ nav>h1 {
 
 
 /* portfolio selesai */
+/* footer mulai */
+footer {
+  background-color: var(--bgFooter);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Footer-bottom>h2>a {
+color: black;
+font-size: 1.5rem;
+}
+/* footer selesai */
 
 @media screen and (max-width: 576px) {
   
