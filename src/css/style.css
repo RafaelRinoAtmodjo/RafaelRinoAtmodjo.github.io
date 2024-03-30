@@ -97,7 +97,8 @@ nav>ul>li>a>button:hover {
 }
 
 .btn:hover {
-  border: none;!important
+  border: none; 
+  !important
 }
 
 nav>h1 {
@@ -318,6 +319,71 @@ nav>h1 {
 
 
 /* portfolio selesai */
+/* contact mulai */
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper-contact {
+  display: flex;
+}
+
+.contact-left {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 90%;
+  border-radius: 50px;
+  background-color: var(--iconColor);
+  padding: 3rem;
+}
+
+.contact-title>h1 {
+  font-weight: 600px;
+  color: var(--iconColor);
+  margin-bottom: 5px;
+  font-size: 2rem;
+}
+
+.contact-title>hr {
+  border: none;
+  width: 120px;
+  height: 5px;
+  background-color: var(--iconColor);
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.contact-input {
+  outline: none;
+  border: none;
+  width:  100%;
+  height: 50px;
+  padding-left: 1.5rem;
+  font-weight: 500;
+  color: #666;
+  border-radius: 50px;
+}
+
+.textarea {
+  height: 140px;
+  width: 100%;
+  padding-top: 10px;
+  border-radius: 20px;
+}
+
+.contact-input:focus {
+  border: 2px solid lightgreen
+}
+/* contact selesai */
 /* footer mulai */
 footer {
   background-color: var(--bgFooter);
